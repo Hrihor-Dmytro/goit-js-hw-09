@@ -10,14 +10,14 @@ const refs = {
   minutesSpan: document.querySelector('[data-minutes]'),
   secondsSpan: document.querySelector('[data-seconds]'),
 };
-const {
-  inputDate,
-  setTimerBtn,
-  daysSpan,
-  hoursSpan,
-  minutesSpan,
-  secondsSpan,
-} = refs;
+// const {
+//   inputDate,
+//   setTimerBtn,
+//   daysSpan,
+//   hoursSpan,
+//   minutesSpan,
+//   secondsSpan,
+// } = refs;
 
 let currentTime = new Date();
 let selectedDatesUTC = 0;
