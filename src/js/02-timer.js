@@ -2,14 +2,13 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
-const refs = {
-  inputDate: document.querySelector('#datetime-picker '),
-  setTimerBtn: document.querySelector('[data-start]'),
-  daysSpan: document.querySelector('[data-days]'),
-  hoursSpan: document.querySelector('[data-hours]'),
-  minutesSpan: document.querySelector('[data-minutes]'),
-  secondsSpan: document.querySelector('[data-seconds]'),
-};
+const inputDate = document.querySelector('#datetime-picker ');
+const setTimerBtn = document.querySelector('[data-start]');
+const daysSpan = document.querySelector('[data-days]');
+const hoursSpan = document.querySelector('[data-hours]');
+const minutesSpan = document.querySelector('[data-minutes]');
+const secondsSpan = document.querySelector('[data-seconds]');
+
 // const {
 //   inputDate,
 //   setTimerBtn,
@@ -22,6 +21,7 @@ const refs = {
 let currentTime = new Date();
 let selectedDatesUTC = 0;
 let intervalId = null;
+
 setTimerBtn.addEventListener('click', toStartTimer);
 
 setTimerBtn.disabled = true;
